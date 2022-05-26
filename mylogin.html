@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<html>
+<head>
+	<title>
+		my login
+	</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="mylogin1.css">
+
+
+
+  <!--script for nav bar-->
+
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+
+  <script type="text/javascript">
+    $(window).on('scroll', function() {
+      if ($(window).scrollTop()) {
+        $('nav').addClass('black');
+      } else {
+        $('nav').removeClass('black');
+      }
+    })
+    /*menu button onclick function*/
+    $(document).ready(function() {
+      $('.menu h4').click(function() {
+        $("nav ul").toggleClass("active")
+      })
+    })
+  </script>
+  <!--end of navbar script-->
+
+
+
+</head>
+	
+<body>
+	 <!-- Navigation bar-->
+
+<!-- Navigation bar start-->
+
+ <div class="responsive-bar">
+    <div class="logo">
+      <img src="http://www.mhf.org.au/media/zoo/images/yourlogohere_2cb8c31ab01096e7842d781ac311a776.png" alt="logo" />
+    </div>
+    <div class="menu">
+      <h4>Menu</h4>
+    </div>
+  </div>
+  <nav class="navbar-fixed-top">
+    <div class="logo">
+      <img src="http://www.mhf.org.au/media/zoo/images/yourlogohere_2cb8c31ab01096e7842d781ac311a776.png" alt="logo" />
+    </div>
+    <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="about.html">About us</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+  </nav>
+
+  <!--navbar end-->
+
+
+
+
+
+
+
+<div class="container">
+	<div class="form-box">
+		<div class="button-box">
+     		<div id="btn"></div>
+			<button type="button" class="toggle-btn" onclick="login()">login</button>
+			<button type="button" class="toggle-btn" onclick="signup()">signup</button>
+			
+		</div>
+		
+	
+	<div class ="social-media">
+	 <img class ="social" src="fb.png">
+	 <img class ="social" src="insta.jpg">
+	  <img class ="social" src="twitter.png">
+	 
+	</div>
+
+
+	
+	<form class="login-form" id="login" >
+		
+		
+	   <input type="text" class="form-field" placeholder="username" required>
+	   
+ 	   <input type="password" class="form-field" placeholder="password" required>
+ 	   
+	   <input type="checkbox" class ="checkbox" required><span id="spa">remember password</span>
+<button type= "submit" class="submit">login</button>
+	
+		<span class="spa1">forget password?</span>	
+ </form>
+  
+
+	<form class="login-form" id="signup" >
+		
+		
+	   <input type="text" class="form-field" placeholder="username" required>
+	   <input type="email" class ="form-field" placeholder="email address" required>
+	   
+ 	   <input type="password" class="form-field" placeholder="password" required>
+ 	   
+	   <input type="checkbox" class ="checkbox" required><span> I Accept to the Term & Condition</span>
+<button type= "submit" class="submit">signup</button>	
+    </form>
+
+         </div>  
+  </div>
+  
+
+	  <script>
+  	
+  	var x = document.getElementById("login");
+  	var y = document.getElementById("signup");
+  	var z = document.getElementById("btn");
+
+
+
+  	function signup() {
+
+  		
+  		x.style.left = " 950px ";
+  		y.style.left = "login-form";
+  	    z.style.left = " 110px ";
+  	    y.style.display="inline";
+  	    x.style.display="none";
+	
+  				
+  	}
+ 	
+  	function login() {
+
+  		x.style.left = "";
+  		y.style.left = " 250x ";
+  	    z.style.left = " 0px ";
+  	    y.style.display="none";
+  	    x.style.display="inline"; 	 
+
+	}
+  	
+  	   
+  </script>
+
+
+
+
+
+
+
+
+
+
+</body> 
+
+
+</html>
